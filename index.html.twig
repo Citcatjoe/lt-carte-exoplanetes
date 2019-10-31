@@ -1,0 +1,51 @@
+{% use '_blocks.html.twig' %} 
+
+<!DOCTYPE HTML>
+
+<html>	
+
+	<head>
+		{{ block('head_brand') }} 
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		
+	</head>
+
+	<body>
+		{{ block('bar_brand') }} 
+	
+		<img src="img/oval.png" class="planet">
+		
+		
+		<div class="container">
+
+			<div class="slide home">
+				<h1>5 méthodes pour découvrire des exoplanètes</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitationx.</p>
+				
+				<button>Dlmarrer</button>
+			</div>	
+
+
+
+			<div class="bottom-nav">
+				<span class="starmap"></span>
+				<span class="prev">Prev</span>
+				<span class="next">Next</span>
+			</div>
+		</div>
+			
+
+		<!--<script src="js/tabletop.js"></script>-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script> -->
+		<!-- <script src="js/handlebars-v4.0.4.js"></script> -->
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/main.js"></script>
+		{{ block('footer_brand') }}
+	</body>
+</html>

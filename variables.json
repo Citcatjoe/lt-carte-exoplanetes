@@ -1,0 +1,14 @@
+{
+	"title": "En 2100, il ne restera au mieux qu’une cinquantaine de glaciers en Suisse",
+	"description": "Si les températures s’élèvent de 2 degrés d’ici à la fin du siècle, seuls 48 glaciers survivraient en Suisse. ",
+	"imgSocial": "social.jpg", 
+
+	"navBarStyle": "normal",
+	"navBarOffset": "0",
+	"navBarLocked": true,
+
+	"partner": {
+		"logo": "img/empty.png",
+		"link": "http://www.letemps.ch"
+	}
+}

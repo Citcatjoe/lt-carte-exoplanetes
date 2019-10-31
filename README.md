@@ -1,1 +1,1 @@
-# lt-carte-exoplanetes
+# lt-carte-silicon-valley

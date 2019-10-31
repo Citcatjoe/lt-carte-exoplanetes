@@ -1,0 +1,1 @@
+jQuery(document).ready(function(o){o(".owl-carousel").owlCarousel({items:1,animateOut:"fadeOut",loop:!0,margin:10,dots:!0,nav:!0})});
