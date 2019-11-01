@@ -93,13 +93,14 @@ html
     height: 100%;
     font-size: 1em;
     line-height: 1.4;  
-
+    overflow: hidden;
     
 }
 
 body 
 {
   height: 100%;
+  overflow: hidden;
   //margin-top: 57px;
   //background: #000;
 

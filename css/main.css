@@ -28,10 +28,12 @@ html {
   color: black !important;
   height: 100%;
   font-size: 1em;
-  line-height: 1.4; }
+  line-height: 1.4;
+  overflow: hidden; }
 
 body {
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
 
 img {
   display: block; }
@@ -219,12 +221,15 @@ textarea {
 /*/HTML5 Boilerplate) Clearfix, hidden, visuallyhidden, invisible...*/
 body {
   position: relative;
-  background: black; }
+  background: url("../img/bg-mobile.png");
+  background-size: cover;
+  background-position: center center; }
   body .planet {
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%; }
+    left: 50%;
+    transform: translate(-50%, 40%);
+    width: 170%; }
 
 .container {
   position: relative;
@@ -234,16 +239,42 @@ body {
   max-width: 600px;
   margin: auto; }
   .container .slide {
+    position: absolute;
     width: 100%;
     height: 100%;
     color: gray;
-    padding: 40px; }
+    padding: 40px;
+    transform: translateX(100%); }
   .container .bottom-nav {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 60px;
-    background: #323232; }
+    background: #323232;
+    /*ul
+        {
+            width: 100%;
+            height: 100%;
+
+            li 
+            {
+                height: 100%;
+                width: calc(100% / 6);
+                float: left;
+                text-align: center;
+                position: relative;
+
+                img 
+                {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    height: 75%;
+                    width: auto;
+                }
+            }
+        }*/ }
     .container .bottom-nav .starmap {
       position: absolute;
       height: 100%;
@@ -251,6 +282,13 @@ body {
       left: 50%;
       transform: translateX(-50%);
       background: purple; }
+      .container .bottom-nav .starmap ul {
+        width: 100%;
+        height: 100%; }
+        .container .bottom-nav .starmap ul li {
+          height: 100%;
+          width: calc(100% / 5);
+          float: left; }
     .container .bottom-nav .prev {
       position: absolute;
       height: 100%;
@@ -263,9 +301,23 @@ body {
       width: 70px;
       right: 0;
       background: purple; }
-
-.home {
-  position: relative; }
+  .container button {
+    position: absolute;
+    background: red;
+    bottom: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid blue;
+    background: transparent;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer; }
+    .container button:focus {
+      outline: none; }
+    .container button:active {
+      outline: none; }
 
 /*Header, section, article, footer...*/
 /*Buttons, dropdown...*/

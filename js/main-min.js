@@ -1,1 +1,1 @@
-jQuery(document).ready(function(o){o(".owl-carousel").owlCarousel({items:1,animateOut:"fadeOut",loop:!0,margin:10,dots:!0,nav:!0})});
+jQuery(document).ready((function(e){function t(){TweenLite.set(n,{x:"0%"}),TweenLite.set(o,{autoAlpha:0}),TweenLite.set(l,{className:"-=loading"})}e("h1").click((function(){alert("con")}));var a,i=e(".slide"),n=e(".slide.is-active"),l=e("body"),o=l.find(".bottom-nav"),s=e(".starmap ul a"),c=e(".starmap ul li");t()}));
