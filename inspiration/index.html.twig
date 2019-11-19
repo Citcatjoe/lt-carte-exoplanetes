@@ -1,0 +1,155 @@
+{% use '_blocks.html.twig' %}
+
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+		{{ block('head_brand') }}
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/loader.css" />
+		<link href='https://fonts.googleapis.com/css?family=Raleway:500,700,300,800,100,200' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body style="padding-top: {{ navBarOffset }};" class="loading">
+		{{ block('bar_brand') }}
+		<!-- <div class="overlay">
+			<img class="logo-lt-blanc" src="img/logo-lt-blanc.svg" alt="">
+			<div class="spinner">
+				<div class="double-bounce1"></div>
+				<div class="double-bounce2"></div>
+			</div>
+		</div>  -->
+		<svg version="1.1" class="go-back-up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="81px" height="81px" viewBox="0 0 81 81" enable-background="new 0 0 81 81" xml:space="preserve"><rect fill="#D4D926" width="81" height="81"/><polygon fill="#FFFFFF" points="42.135,31.734 40.5,30.1 38.865,31.734 21.333,49.266 22.968,50.9 40.5,33.369 58.031,50.9 59.666,49.266 "/></svg>
+
+		<section class="reader">
+			
+		</section>
+
+		<aside>
+			<a href="http://www.letemps.ch" target="blank"><img class="logo-lt" src="img/logo-lt.svg" alt=""></a>
+			<h5>épisodes</h5>
+			<ul>
+				<a href="#slide01"><li class="is-active"><span>Épisode</span> 1</li></a>
+				<a href="#slide02"><li><span>Épisode</span> 2</li></a>
+				<a href="#slide03"><li><span>Épisode</span> 3</li></a>
+				<a href="#slide04"><li><span>Épisode</span> 4</li></a>
+				<a href="#slide05"><li><span>Épisode</span> 5</li></a>
+			</ul>
+			<footer>
+				<a target="blank" href="https://www.facebook.com/sharer.php?u={{ app.url }}&display=popup&ref=plugin&src=share_button"><img src="img/landing-social-facebook.svg" alt=""></a>
+				<a target="blank" href="https://twitter.com/intent/tweet?text={{ description ~ ' ' ~ app.url ~ ' '|url_encode }}&via=letemps"><img src="img/landing-social-twitter.svg" alt=""></a>
+				<a target="blank" href="https://www.linkedin.com/shareArticle?url={{ app.url }}&mini=true&title={{ title|url_encode }}&summary={{ description|url_encode }}&source={{ 'Le Temps'|url_encode }}"><img src="img/landing-social-linkedin.svg" alt=""></a>
+			</footer>
+			<!-- <img class="logo-se" src="img/logo-se.svg" alt=""> -->
+		</aside>
+
+		<div id="wrapper">
+
+			<div class="loader"></div>
+
+			<div id="slide01" class="slide is-active">
+				<div class="slide-gradient"></div>
+				<div class="slide-content">
+					<h1><span>Menace sur les trésors<br>de la biodiversité<br></span>Dans des grottes, sur des sentiers ou des rivières, «Le Temps» vous invite à la rencontre de la faune et de la flore de nos cantons</h1>
+					<div class="slide-content-episode">
+						<h2>Le minioptère de Schreibers</h2>
+						<h3>A la rencontre des espèces menacées<br><span>Episode 01</span></h3>
+						<p>La chauve-souris cavernicole repeuple la réserve naturelle neuchâteloise après une réduction drastique de sa population. La grotte du «Chemin de Fer», son abri de prédilection, est protégée.</p>
+						<h4>Par <span>Aurélie Coulon</span></h4>
+						<div class="button-container">
+							<a href="http://www.letemps.ch/sciences/2016/07/19/minioptere-schreibers-lhote-attendu-gorges-lareuse" target="blank">
+								<button>Lire l'article</button>
+								<div class="button-shadow">Lire l'article</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="slide02" class="slide">
+				<div class="slide-gradient"></div>
+				<div class="slide-content">
+					<!-- <h1><span>Les plus belles plages de Romandie<br></span>Voguez le temps d'un safari lacustre ou saluez le soleil face aux sommets grâce aux bons plans d'été 2016</h1> -->
+					<div class="slide-content-episode">
+						<h2>Le nénuphar nain</h2>
+						<h3>A la rencontre des espèces menacées<br><span>Episode 02</span></h3>
+						<p>Aux Paccots, le lac des Joncs héberge une rare population de nénuphars nains. Le délicat végétal était fréquent à une époque où des conditions glaciales régnaient sur la région. </p>
+						<h4>Par <span>Pascaline Minet</span></h4>
+						<div class="button-container">
+							<a href="https://www.letemps.ch/sciences/2016/07/19/nenuphar-nain-fragile-heritage-temps-glaciaires" target="blank">
+								<button>Lire l'article</button>
+								<div class="button-shadow">Lire l'article</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="slide03" class="slide">
+				<div class="slide-gradient"></div>
+				<div class="slide-content">
+					<!-- <h1><span>Les plus belles plages de Romandie<br></span>Voguez le temps d'un safari lacustre ou saluez le soleil face aux sommets grâce aux bons plans d'été 2016</h1> -->
+					<div class="slide-content-episode">
+						<h2>La couleuvre vipérine</h2>
+						<h3>A la rencontre des espèces menacées<br><span>Episode 03</span></h3>
+						<p>Le recul des zones humides suisses s’accompagne d’un spectaculaire effondrement des populations de reptiles. Espèce la plus menacée, la couleuvre vipérine survit dans trois cantons.</p>
+						<h4>Par <span>Fabien Goubet</span></h4>
+						<div class="button-container">
+							<a href="https://www.letemps.ch/sciences/2016/07/20/couleuvre-viperine-fragile-reptile" target="blank">
+								<button>Lire l'article</button>
+								<div class="button-shadow">Lire l'article</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="slide04" class="slide">
+				<div class="slide-gradient"></div>
+				<div class="slide-content">
+					<!-- <h1><span>Les plus belles plages de Romandie<br></span>Voguez le temps d'un safari lacustre ou saluez le soleil face aux sommets grâce aux bons plans d'été 2016</h1> -->
+					<div class="slide-content-episode">
+						<h2>La panure à moustaches</h2>
+						<h3>A la rencontre des espèces menacées<br><span>Episode 04</span></h3>
+						<p>Située sur la rive sud du lac de Neuchâtel, la réserve naturelle de la Grande Cariçaie abrite des espèces qui ne vivent que dans les milieux humides. Parmi elles, cet inclassable passereau qui se laisse assez facilement observer.</p>
+						<h4>Par <span>Pascaline Minet</span></h4>
+						<div class="button-container">
+							<a href="https://www.letemps.ch/sciences/2016/07/21/panure-moustaches-intrigant-oiseau-roseaux" target="blank">
+								<button>Lire l'article</button>
+								<div class="button-shadow">Lire l'article</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="slide05" class="slide">
+				<div class="slide-gradient"></div>
+				<div class="slide-content">
+					<!-- <h1><span>Les plus belles plages de Romandie<br></span>Voguez le temps d'un safari lacustre ou saluez le soleil face aux sommets grâce aux bons plans d'été 2016</h1> -->
+					<div class="slide-content-episode">
+						<h2>Le grand capricorne</h2>
+						<h3>A la rencontre des espèces menacées<br><span>Episode 05</span></h3>
+						<p>Bien qu’étant le plus grand d’Europe, il ne se laisse pas facilement observer. Pour tenter de le dénicher, direction la châtaigneraie de Fully en Valais, un site exceptionnel pour cet insecte exigeant.</p>
+						<h4>Par <span>Nathalie Jollien</span></h4>
+						<div class="button-container">
+							<a href="https://www.letemps.ch/sciences/2016/07/21/grand-capricorne-un-coleoptere-geant-menace" target="blank">
+								<button>Lire l'article</button>
+								<div class="button-shadow">Lire l'article</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		{{ block('footer_brand') }}
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/CSSRulePlugin.min.js"></script>
+        <script src="js/main.js"></script>
+	</body>
+	
+</html>

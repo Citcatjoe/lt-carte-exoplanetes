@@ -2124,6 +2124,25 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/inspiration/index.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inspiration/index.html.twig",
+		"oF": 0
+		},
+	"/inspiration/ivo.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/inspiration/ivo-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/inspiration/main.js": {
 		"bF": 0,
 		"ft": 64,
@@ -7447,7 +7466,7 @@
 "projectAttributes": {
 	"creationDate": 552230071,
 	"displayValue": "lt-carte-exoplanetes",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_gray",
 	"iconImageWasSetByUser": 0
 	},
