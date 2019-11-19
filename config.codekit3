@@ -7,7 +7,7 @@
 		"uuidString": "47C26614-9BD1-4FAF-AAA5-0BEA91D32DC5"
 		}
 	],
-"creatorBuild": "31934",
+"creatorBuild": "31491",
 "files": {
 	"/css/_barbarian_reset.scss": {
 		"aP": 0,
@@ -2054,6 +2054,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/index.php",
+		"oF": 0
+		},
+	"/index___.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/index___.php",
 		"oF": 0
 		},
 	"/indexH.php": {
@@ -7876,7 +7884,6 @@
 			"flagValue": -1
 			}
 		},
-	"environmentVariablesString": "NODE_ENV:::production",
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
 	"esLintEnvironmentsMask": 1,
@@ -7978,10 +7985,6 @@
 			"optionString": "'all'"
 			},
 		"default-case": {
-			"active": 0,
-			"optionString": ""
-			},
-		"default-param-last": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -8331,10 +8334,6 @@
 			},
 		"no-implied-eval": {
 			"active": 0,
-			"optionString": ""
-			},
-		"no-import-assign": {
-			"active": 1,
 			"optionString": ""
 			},
 		"no-inline-comments": {
@@ -8761,10 +8760,6 @@
 			"active": 0,
 			"optionString": "{'allowEmptyReject': false}"
 			},
-		"prefer-regex-literals": {
-			"active": 0,
-			"optionString": ""
-			},
 		"prefer-rest-params": {
 			"active": 0,
 			"optionString": ""
@@ -8919,7 +8914,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http://localhost:8888/lt-carte-exoplanetes",
+	"externalServerAddress": "http://localhost:8080/lt-carte-exoplanetes",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
@@ -9373,6 +9368,7 @@
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 1,
 		"enableJavascript": 0,
+		"ieCompatibility": 0,
 		"mathStyle": 0,
 		"outputStyle": 0,
 		"rewriteURLStyle": 0,
@@ -9512,9 +9508,6 @@
 	"npmTargetDependencyListType": 1,
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
-	"rollupExternals": "",
-	"rollupReplacements": "process.env.NODE_ENV:::$NODE_ENV,,,ENVIRONMENT:::$NODE_ENV",
-	"rollupTreeshakingEnabled": 1,
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
