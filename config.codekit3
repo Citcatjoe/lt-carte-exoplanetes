@@ -1259,242 +1259,84 @@
 		"oAP": "/favicon.ico",
 		"oF": 0
 		},
-	"/fonts/ratio_bold.eot": {
+	"/fonts/AvenirLTStd-Black.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/fonts/ratio_bold.eot",
+		"oAP": "/fonts/AvenirLTStd-Black.woff",
 		"oF": 0
 		},
-	"/fonts/ratio_bold.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/fonts/ratio_bold.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/fonts/ratio_bold.ttf": {
+	"/fonts/AvenirLTStd-Black.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/fonts/ratio_bold.ttf",
+		"oAP": "/fonts/AvenirLTStd-Black.woff2",
 		"oF": 0
 		},
-	"/fonts/ratio_bold.woff": {
+	"/fonts/AvenirLTStd-Book.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/fonts/ratio_bold.woff",
+		"oAP": "/fonts/AvenirLTStd-Book.woff",
 		"oF": 0
 		},
-	"/fonts/ratio_light.eot": {
+	"/fonts/AvenirLTStd-Book.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/fonts/ratio_light.eot",
+		"oAP": "/fonts/AvenirLTStd-Book.woff2",
 		"oF": 0
 		},
-	"/fonts/ratio_light.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/fonts/ratio_light.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/fonts/ratio_light.ttf": {
+	"/fonts/AvenirLTStd-Heavy.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/fonts/ratio_light.ttf",
+		"oAP": "/fonts/AvenirLTStd-Heavy.woff",
 		"oF": 0
 		},
-	"/fonts/ratio_light.woff": {
+	"/fonts/AvenirLTStd-Heavy.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/fonts/ratio_light.woff",
+		"oAP": "/fonts/AvenirLTStd-Heavy.woff2",
 		"oF": 0
 		},
-	"/fonts/ratio_medium.eot": {
+	"/fonts/AvenirLTStd-Light.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/fonts/ratio_medium.eot",
+		"oAP": "/fonts/AvenirLTStd-Light.woff",
 		"oF": 0
 		},
-	"/fonts/ratio_medium.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/fonts/ratio_medium.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/fonts/ratio_medium.ttf": {
+	"/fonts/AvenirLTStd-Light.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/fonts/ratio_medium.ttf",
+		"oAP": "/fonts/AvenirLTStd-Light.woff2",
 		"oF": 0
 		},
-	"/fonts/ratio_medium.woff": {
+	"/fonts/AvenirLTStd-Medium.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/fonts/ratio_medium.woff",
+		"oAP": "/fonts/AvenirLTStd-Medium.woff",
 		"oF": 0
 		},
-	"/fonts/ratio_reg.eot": {
+	"/fonts/AvenirLTStd-Medium.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/fonts/ratio_reg.eot",
-		"oF": 0
-		},
-	"/fonts/ratio_reg.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/fonts/ratio_reg.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/fonts/ratio_reg.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/fonts/ratio_reg.ttf",
-		"oF": 0
-		},
-	"/fonts/ratio_reg.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/fonts/ratio_reg.woff",
-		"oF": 0
-		},
-	"/fonts/rooney_bold.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/fonts/rooney_bold.eot",
-		"oF": 0
-		},
-	"/fonts/rooney_bold.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/fonts/rooney_bold.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/fonts/rooney_bold.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/fonts/rooney_bold.ttf",
-		"oF": 0
-		},
-	"/fonts/rooney_bold.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/fonts/rooney_bold.woff",
-		"oF": 0
-		},
-	"/fonts/rooney_light.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/fonts/rooney_light.eot",
-		"oF": 0
-		},
-	"/fonts/rooney_light.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/fonts/rooney_light.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/fonts/rooney_light.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/fonts/rooney_light.ttf",
-		"oF": 0
-		},
-	"/fonts/rooney_light.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/fonts/rooney_light.woff",
-		"oF": 0
-		},
-	"/fonts/rooney_medium.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/fonts/rooney_medium.eot",
-		"oF": 0
-		},
-	"/fonts/rooney_medium.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/fonts/rooney_medium.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/fonts/rooney_medium.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/fonts/rooney_medium.ttf",
-		"oF": 0
-		},
-	"/fonts/rooney_medium.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/fonts/rooney_medium.woff",
+		"oAP": "/fonts/AvenirLTStd-Medium.woff2",
 		"oF": 0
 		},
 	"/header-home-article.jpg": {
@@ -2006,6 +1848,27 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/img/tableau.png": {
+		"ft": 32768,
+		"iS": 31340,
+		"oA": 0,
+		"oAP": "/img/tableau.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/tableau.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/tableau.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"/img/test.png": {
 		"ft": 32768,

@@ -12,6 +12,7 @@ $black:#000;
 $white:#fff;
 $twitter:#00aced;
 $facebook:#3d5a98; 
+$border: #4c444c;
 
 $red-lt: #b80021;
 $red-lt-darker: #930025;
@@ -23,13 +24,13 @@ $red-lt-darker: #930025;
 // headings
 //@include font-face("ratio_light", "../fonts/ratio_light", $file-formats: eot woff ttf svg); 
 //@include font-face("ratio_reg", "../fonts/ratio_reg", $file-formats: eot woff ttf svg); 
-@include font-face("ratio_medium", "../fonts/ratio_medium", $file-formats: eot woff ttf svg); 
+//@include font-face("ratio_medium", "../fonts/ratio_medium", $file-formats: eot woff ttf svg); 
 //@include font-face("ratio_bold", "../fonts/ratio_bold", $file-formats: eot woff ttf svg); 
 
 // paragraphs
-@include font-face("rooney_light", "../fonts/rooney_light", $file-formats: eot woff ttf svg); 
+//@include font-face("rooney_light", "../fonts/rooney_light", $file-formats: eot woff ttf svg); 
 //@include font-face("rooney_medium", "../fonts/rooney_medium", $file-formats: eot woff ttf svg); 
-@include font-face("rooney_bold", "../fonts/rooney_bold", $file-formats: eot woff ttf svg); 
+//@include font-face("rooney_bold", "../fonts/rooney_bold", $file-formats: eot woff ttf svg); 
 
 $light: 100;
 $regular: 400;
@@ -101,6 +102,7 @@ body
 {
   height: 100%;
   overflow: hidden;
+  font-size: 16px;
   //margin-top: 57px;
   //background: #000;
 
@@ -112,16 +114,33 @@ body
 img
 {
   display:block;
+  width: 100%;
+
+}
+
+img.tableau
+{
+  margin-bottom: 25px;
+}
+   
+
+.keyword
+{
+  
 }
 
 h1
 {
-  font-size:36px;
+  font-size:43px;
+  line-height: 43px;
   font-weight: lighter;
-  font-family: 'ratio_medium';
+  font-family: 'EB Garamond';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin-bottom:15px;
+  color: white;
+  font-weight: 100;
+  text-align: center;
 
   i 
   {
@@ -132,40 +151,29 @@ h1
 
 h2
 {
-  font-size:16px;
+  font-size:43px;
+  line-height: 43px;
   font-weight: lighter;
-  font-family: 'rooney_light';
-  margin-bottom:10px;
-  line-height: 20px;
-
-  span.caret
-  {
-    color: $red-lt;
-    margin-right: 5px;
-  }
-
-  span.maj
-  {
-    text-transform: uppercase;
-    
-    //text-transform: uppercase;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  // i 
-  // {
-  //   float:right;
-  //   top:0;
-  // }
+  font-family: 'EB Garamond';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-top: 65px;
+  margin-bottom:35px;
+  color: white;
+  font-weight: 100;
+  text-align: left;
 }
 
 p 
 {
-  font-family: 'rooney_light';
-  font-size:1.2rem;
-  line-height: 23px;
+  font-family: 'Avenir LT Std';
+  font-weight: normal;
+  font-size:1.05rem;
+  line-height: 22px;
   margin-bottom: 20px;
+  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #C0C0C0;
 
   span
   {

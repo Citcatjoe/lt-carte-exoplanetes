@@ -6,24 +6,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-@font-face {
-  font-family: "ratio_medium";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/ratio_medium.eot?#iefix") format("embedded-opentype"), url("../fonts/ratio_medium.woff") format("woff"), url("../fonts/ratio_medium.ttf") format("truetype"), url("../fonts/ratio_medium.svg#ratio_medium") format("svg"); }
-
-@font-face {
-  font-family: "rooney_light";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/rooney_light.eot?#iefix") format("embedded-opentype"), url("../fonts/rooney_light.woff") format("woff"), url("../fonts/rooney_light.ttf") format("truetype"), url("../fonts/rooney_light.svg#rooney_light") format("svg"); }
-
-@font-face {
-  font-family: "rooney_bold";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/rooney_bold.eot?#iefix") format("embedded-opentype"), url("../fonts/rooney_bold.woff") format("woff"), url("../fonts/rooney_bold.ttf") format("truetype"), url("../fonts/rooney_bold.svg#rooney_bold") format("svg"); }
-
 html {
   color: black !important;
   height: 100%;
@@ -33,41 +15,53 @@ html {
 
 body {
   height: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  font-size: 16px; }
 
 img {
-  display: block; }
+  display: block;
+  width: 100%; }
+
+img.tableau {
+  margin-bottom: 25px; }
 
 h1 {
-  font-size: 36px;
+  font-size: 43px;
+  line-height: 43px;
   font-weight: lighter;
-  font-family: 'ratio_medium';
+  font-family: 'EB Garamond';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  color: white;
+  font-weight: 100;
+  text-align: center; }
   h1 i {
     float: right;
     top: 0; }
 
 h2 {
-  font-size: 16px;
+  font-size: 43px;
+  line-height: 43px;
   font-weight: lighter;
-  font-family: 'rooney_light';
-  margin-bottom: 10px;
-  line-height: 20px; }
-  h2 span.caret {
-    color: #b80021;
-    margin-right: 5px; }
-  h2 span.maj {
-    text-transform: uppercase;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; }
+  font-family: 'EB Garamond';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-top: 65px;
+  margin-bottom: 35px;
+  color: white;
+  font-weight: 100;
+  text-align: left; }
 
 p {
-  font-family: 'rooney_light';
-  font-size: 1.2rem;
-  line-height: 23px;
-  margin-bottom: 20px; }
+  font-family: 'Avenir LT Std';
+  font-weight: normal;
+  font-size: 1.05rem;
+  line-height: 22px;
+  margin-bottom: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #C0C0C0; }
   p span {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -219,6 +213,12 @@ textarea {
   clear: both; }
 
 /*/HTML5 Boilerplate) Clearfix, hidden, visuallyhidden, invisible...*/
+video {
+  width: 100%;
+  border: 1px solid #4c444c;
+  margin-top: 15px;
+  margin-bottom: 35px; }
+
 body {
   position: relative;
   background: url("../img/bg-mobile.png");
@@ -244,14 +244,17 @@ body {
     width: 100%;
     height: 100%;
     color: gray;
-    padding: 40px;
+    padding: 20px;
     transform: translateX(100%); }
+    .container .slide.slide05 {
+      background: rgba(0, 0, 0, 0.5); }
   .container .bottom-nav {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 60px;
-    background: #323232;
+    background: #171717;
+    border-top: 1px solid #4c444c;
     /*.starmap
         {
             position: absolute;
@@ -332,6 +335,36 @@ nav {
 
 .lt-container {
   margin-top: 40px !important; }
+
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url("../fonts/AvenirLTStd-Medium.woff2") format("woff2"), url("../fonts/AvenirLTStd-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url("../fonts/AvenirLTStd-Book.woff2") format("woff2"), url("../fonts/AvenirLTStd-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url("../fonts/AvenirLTStd-Heavy.woff2") format("woff2"), url("../fonts/AvenirLTStd-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url("../fonts/AvenirLTStd-Black.woff2") format("woff2"), url("../fonts/AvenirLTStd-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url("../fonts/AvenirLTStd-Light.woff2") format("woff2"), url("../fonts/AvenirLTStd-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
 
 /* ==========================================================================
    Print styles.
