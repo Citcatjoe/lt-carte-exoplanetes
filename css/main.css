@@ -20,43 +20,80 @@ body {
 
 img {
   display: block;
-  width: 100%; }
-
-img.tableau {
+  width: 100%;
   margin-bottom: 25px; }
 
-h1 {
-  font-size: 43px;
-  line-height: 43px;
-  font-weight: lighter;
-  font-family: 'EB Garamond';
+.caption {
+  text-align: right;
+  display: block;
+  margin-top: -15px;
+  margin-bottom: 25px;
+  font-family: 'Avenir LT Std';
+  font-weight: normal;
+  font-size: 0.85rem;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; }
+
+.keyword {
+  display: block;
+  text-align: center;
+  font-size: 100%;
+  font-family: 'Avenir LT Std';
+  color: #c0c0c0;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: lighter;
+  margin-bottom: 20px; }
+  .keyword.alt {
+    text-align: left;
+    margin-bottom: 15px; }
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-family: 'Avenir LT Std';
   margin-bottom: 15px;
   color: white;
   font-weight: 100;
-  text-align: center; }
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
   h1 i {
     float: right;
     top: 0; }
 
 h2 {
-  font-size: 43px;
-  line-height: 43px;
-  font-weight: lighter;
+  font-size: 2.3rem;
+  line-height: 2.5rem;
+  font-family: 'Avenir LT Std';
+  margin-bottom: 35px;
+  color: white;
+  text-align: left;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  h2 .subtitle {
+    font-family: 'EB Garamond';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: block;
+    font-style: italic;
+    font-size: 70%;
+    font-weight: lighter; }
+
+h3 {
   font-family: 'EB Garamond';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-top: 65px;
-  margin-bottom: 35px;
-  color: white;
-  font-weight: 100;
-  text-align: left; }
+  margin-top: 2rem;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #ffffff; }
 
 p {
   font-family: 'Avenir LT Std';
   font-weight: normal;
-  font-size: 1.05rem;
+  font-size: 1.10rem;
   line-height: 22px;
   margin-bottom: 20px;
   -webkit-font-smoothing: antialiased;
@@ -71,6 +108,8 @@ p {
   p.credits {
     font-size: 12px;
     line-height: 20px; }
+  p b {
+    color: white; }
 
 a {
   color: #b80021;
@@ -245,8 +284,27 @@ body {
     height: 100%;
     color: gray;
     padding: 20px;
-    transform: translateX(100%); }
+    transform: translateX(100%);
+    padding-bottom: 80px; }
+    .container .slide.slide00 {
+      padding-top: 30%; }
+    .container .slide.slide01 {
+      padding-top: 65px;
+      background: rgba(0, 0, 0, 0.5); }
+    .container .slide.slide02 {
+      padding-top: 65px;
+      background: rgba(0, 0, 0, 0.5); }
+    .container .slide.slide03 {
+      padding-top: 65px;
+      background: rgba(0, 0, 0, 0.5); }
+    .container .slide.slide04 {
+      padding-top: 65px;
+      background: rgba(0, 0, 0, 0.5); }
     .container .slide.slide05 {
+      padding-top: 65px;
+      background: rgba(0, 0, 0, 0.5); }
+    .container .slide.slide06 {
+      padding-top: 65px;
       background: rgba(0, 0, 0, 0.5); }
   .container .bottom-nav {
     position: absolute;
@@ -282,7 +340,7 @@ body {
       height: 100%; }
       .container .bottom-nav ul li {
         height: 100%;
-        width: calc(100% / 6);
+        width: calc(100% / 7);
         float: left;
         text-align: center;
         position: relative; }
