@@ -19,6 +19,8 @@ jQuery(document).ready(function($)
 		$bottomNavStep4 = $bottomNav.find('#04'),
 		$bottomNavStep5 = $bottomNav.find('#05');
 		$navLink = $bottomNav.find('ul a');
+		$allGlow = $bottomNav.find('.glow');
+		$navNoGlow = $bottomNav.find('.no-glow');
 
 	var	$homeKw = $('.home .keyword'),
 		$homeTitle = $('.home h1'),
@@ -34,6 +36,7 @@ jQuery(document).ready(function($)
 
 		//TweenLite.set($bottomNav, {autoAlpha: 0});
 		TweenLite.set($bottomNav, {autoAlpha: 0});
+		TweenLite.set($allGlow, {autoAlpha: 0});
 
 		// Fade in active slide
 		TweenLite.set($bottomNavStep3, {className: '-=loading'});
@@ -41,12 +44,56 @@ jQuery(document).ready(function($)
 	}
 	init();
 
-	$('button').on('click', function(e){
-		$('.bottom-nav ul li:last-child a').trigger('click');
+	$('#slide00 ul li a').on('click', function(e){
+
+		if(e.preventDefault) {
+			e.preventDefault();
+		} else {
+			e.returnValue = false;
+		}
+
+		var temp = parseInt(($(this).attr('href').substring(7, 8))) +1;
+		console.log(temp);
+
+		$(".bottom-nav ul li:nth-child(" + temp + ") a").trigger("click");
 	});
+
+	// $('#slide00 ul li a').on('click', function(e){
+
+	// 	var $thisIndex = '' + $(this).attr('href').substring(7, 8);
+	// 	var $thisGlow = $(this).find('.glow');
+	// 	var $thisNoGlow = $(this).find('.no-glow');
+
+	// 	console.log($thisIndex);
+
+	// 	if(e.preventDefault) {
+	// 		e.preventDefault();
+	// 	} else {
+	// 		e.returnValue = false;
+	// 	}
+
+	// 	if(!$body.hasClass('is-animating'))
+	// 	{
+	// 		var sectionFrom = $('.slide.is-active'),
+	// 		  	sectionToID = $(this).attr('href'),
+	// 		  	sectionTo = $('div' + sectionToID);
+
+	// 		if(sectionFrom.attr('id') != sectionTo.attr('id')) 
+	// 		{
+	// 			scrollToSection(sectionFrom, sectionTo, $thisGlow, $thisNoGlow, $allGlow);	
+	// 		} 
+	// 	}
+	// });
 
 	// Navigation click
 	$navLink.on('click', function(e){
+
+
+		var $thisGlow = $(this).find('.glow');
+		var $thisNoGlow = $(this).find('.no-glow');
+
+		console.log($thisGlow, $thisNoGlow);
+
 		if(e.preventDefault) {
 			e.preventDefault();
 		} else {
@@ -61,12 +108,12 @@ jQuery(document).ready(function($)
 
 			if(sectionFrom.attr('id') != sectionTo.attr('id')) 
 			{
-				scrollToSection(sectionFrom, sectionTo);	
+				scrollToSection(sectionFrom, sectionTo, $thisGlow, $thisNoGlow, $allGlow);	
 			} 
 		}
 	});
 
-	function scrollToSection(sectionFrom, sectionTo){
+	function scrollToSection(sectionFrom, sectionTo, $thisGlow, $thisNoGlow, $allGlow){
 
 		
 		var tlDown = new TimelineMax({onComplete: setActiveSlide(sectionFrom, sectionTo)});
@@ -83,14 +130,18 @@ jQuery(document).ready(function($)
 				tlFromHome
 					.set($body, {className: '+=is-animating'})
 
-					
-					.to($homePlanet, 1.2, {y: '+=300'})
-					.to(sectionFrom, 1.2, {autoAlpha: 0, ease:Power4.easeInOut, clearProps: 'all'})
+					.to($allGlow, 0.25, {autoAlpha: 0, ease:Power4.easeInOut})
+					.to($thisGlow, 0.25, {autoAlpha: 1, ease:Power4.easeInOut}, '0')
 
-					.to($bottomNav, 1.2, {autoAlpha: 1, ease:Power4.easeInOut})
+					
+					.to($homePlanet, 1, {y: '+=300'})
+					.to(sectionFrom, 1, {autoAlpha: 0, ease:Power4.easeInOut, clearProps: 'all'})
+
+					.to($bottomNav, 0.5, {autoAlpha: 1, ease:Power4.easeInOut})
 
 					.to(sectionTo, 0, {autoAlpha: 0, x: '0%', ease:Power4.easeInOut})
-					.to(sectionTo, 1.2, {autoAlpha: 1, ease:Power4.easeInOut})
+					.to(sectionTo, 1, {autoAlpha: 1, ease:Power4.easeInOut})
+
 
 					.set($body, {className: '-=is-animating'});
 			}
@@ -99,8 +150,12 @@ jQuery(document).ready(function($)
 				//SLIDE RIGHT
 				tlDown
 				.set($body, {className: '+=is-animating'})
-				.to(sectionFrom, 1.2, {x: '-=100%', ease:Power4.easeInOut, clearProps: 'all'}, '0')
-				.to(sectionTo, 1.2, {x: '0%', ease:Power4.easeInOut}, '0')
+
+				.to(sectionFrom, 0.5, {x: '-=100%', ease:Power4.easeInOut, clearProps: 'all'}, '0')
+				.to($allGlow, 0.25, {autoAlpha: 0, ease:Power4.easeInOut}, '0')
+				.to($thisGlow, 0.25, {autoAlpha: 1, ease:Power4.easeInOut})
+				.to(sectionTo, 0.5, {x: '0%', ease:Power4.easeInOut}, '0')
+
 				.set($body, {className: '-=is-animating'});
 			}
 
@@ -114,13 +169,17 @@ jQuery(document).ready(function($)
 				//SLIDE TO HOME
 				tlToHome
 					.set($body, {className: '+=is-animating'})
-					.to(sectionFrom, 1.2, {autoAlpha: 0, ease:Power4.easeInOut, clearProps: 'all'})
+
+					.to($allGlow, 0.25, {autoAlpha: 0, ease:Power4.easeInOut})
+					.to($thisGlow, 0.25, {autoAlpha: 1, ease:Power4.easeInOut}, '0')
+
+					.to(sectionFrom, 1, {autoAlpha: 0, ease:Power4.easeInOut, clearProps: 'all'})
 					.to(sectionTo, 0, {autoAlpha: 0, x: '0%', ease:Power4.easeInOut})
+					.to($bottomNav, 1, {autoAlpha: 0, ease:Power4.easeInOut})
 
-					.to($bottomNav, 1.2, {autoAlpha: 0, ease:Power4.easeInOut})
+					.to($homePlanet, 1, {y: '-=300'})
 
-					.to($homePlanet, 1.2, {y: '-=300'})
-					.to(sectionTo, 1.2, {autoAlpha: 1, ease:Power4.easeInOut})
+					.to(sectionTo, 1, {autoAlpha: 1, ease:Power4.easeInOut})
 					
 					.set($body, {className: '-=is-animating'});
 
@@ -131,8 +190,13 @@ jQuery(document).ready(function($)
 				tlUp
 				.set($body, {className: '+=is-animating'})
 				.set(sectionTo, {x: '-100%'})
-				.to(sectionTo, 1.2, {x: '0%', ease:Power4.easeInOut}, '0')
-				.to(sectionFrom, 1.2, {x: '100%', ease:Power4.easeInOut}, '0')
+
+				.to(sectionTo, 0.5, {x: '0%', ease:Power4.easeInOut}, '0')
+				.to($allGlow, 0.25, {autoAlpha: 0, ease:Power4.easeInOut}, '0')
+				.to($thisGlow, 0.25, {autoAlpha: 1, ease:Power4.easeInOut})
+				.to(sectionFrom, 0.5, {x: '100%', ease:Power4.easeInOut}, '0')
+
+				
 				.set($body, {className: '-=is-animating'});
 			}
 			

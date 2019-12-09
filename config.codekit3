@@ -9,14 +9,6 @@
 	],
 "creatorBuild": "31934",
 "files": {
-	"/Archive.zip": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/Archive.zip",
-		"oF": 0
-		},
 	"/css/_barbarian_reset.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1410,6 +1402,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/D3B77C9DFB336A5C.png": {
+		"ft": 32768,
+		"iS": 3301,
+		"oA": 0,
+		"oAP": "/img/D3B77C9DFB336A5C.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/damien.jpg": {
 		"ft": 16384,
 		"iS": 166418,
@@ -1486,7 +1489,7 @@
 		},
 	"/img/head.jpg": {
 		"ft": 16384,
-		"iS": 44396,
+		"iS": 91834,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/head.jpg",
@@ -1692,11 +1695,31 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/img/planet-home-glow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/planet-home-glow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/img/planet-home.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/img/planet-home.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/planet-jupiter-glow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/planet-jupiter-glow.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -1712,11 +1735,31 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/img/planet-mars-glow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/planet-mars-glow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/img/planet-mars.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/img/planet-mars.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/planet-mercury-glow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/planet-mercury-glow.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -1742,6 +1785,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/img/planet-pluto-glow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/planet-pluto-glow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/img/planet-pluto.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1762,11 +1815,31 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/img/planet-saturne-glow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/planet-saturne-glow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/img/planet-saturne.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/img/planet-saturne.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/planet-uranus-glow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/planet-uranus-glow.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -1795,7 +1868,7 @@
 		},
 	"/img/planet.png": {
 		"ft": 32768,
-		"iS": 0,
+		"iS": 2316925,
 		"oA": 0,
 		"oAP": "/img/planet.png",
 		"oF": 0,
@@ -1817,7 +1890,7 @@
 		},
 	"/img/planet3.png": {
 		"ft": 32768,
-		"iS": 0,
+		"iS": 683409,
 		"oA": 0,
 		"oAP": "/img/planet3.png",
 		"oF": 0,
@@ -1869,7 +1942,7 @@
 		},
 	"/img/shutterstock_306306104.png": {
 		"ft": 32768,
-		"iS": 0,
+		"iS": 2316925,
 		"oA": 0,
 		"oAP": "/img/shutterstock_306306104.png",
 		"oF": 0,
@@ -1880,7 +1953,7 @@
 		},
 	"/img/tableau.png": {
 		"ft": 32768,
-		"iS": 31340,
+		"iS": 5786,
 		"oA": 0,
 		"oAP": "/img/tableau.png",
 		"oF": 0,
@@ -2214,7 +2287,7 @@
 		},
 	"/social.jpg": {
 		"ft": 16384,
-		"iS": 44396,
+		"iS": 202754,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/social.jpg",
