@@ -1,32 +1,40 @@
-{% use '_blocks.html.twig' %} 
+{% use '_blocks.html.twig' %}
 
 <!DOCTYPE HTML>
 
-<html>	
+<html>
 
 	<head>
-		{{ block('head_brand') }} 
+		{{ block('head_brand') }}
 
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.11/c3.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 
 		<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap" rel="stylesheet">
-		
+
 	</head>
 
 	<body>
-		{{ block('bar_brand') }} 
-	
+		{{ block('bar_brand') }}
+
 		<img src="img/planet3.png" class="planet">
-		
-		
+
+
 		<div class="container">
 
 			<div id="slide00" class="slide slide00 home is-active">
 				<span class="keyword">Astronomie</span>
 				<h1>Attraper une exoplanète, mode d'emploi</h1>
+
+				<!-- <div class="factsheet">
+					<div class="two-numbers">
+						<div><span class="number">782</span> <span class="label">Planètes découvertes</span></div>
+						<div><span class="number">1995</span> <span class="label">Année 1è découverte</span></div>
+					</div>
+					<div class="c3-chart" data-method="radial"></div>
+				</div> -->
 
 				<ul class="">
 					<li>
@@ -59,9 +67,9 @@
 				<p>
 					Pour les capturer, les scientifiques ont plusieurs cordes à leur arc, chaque méthode ayant ses avantages. Choisissez-en une ci-dessous, et partez à la chasse aux exoplanètes
 				</p> #}
-				
+
 				<button>Dlmarrer</button>
-			</div>	
+			</div>
 
 			<div id="slide01" class="slide slide01">
 				<span class="keyword alt">Chapitre 1</span>
@@ -69,9 +77,15 @@
 					Méthode des vitesses radiales
 					<span class="subtitle">Les étoiles voient rouge (et bleu)</span>
 				</h2>
-				
-				<img src="img/tableau.png" alt="" class="tableau">
-				
+
+				<div class="factsheet">
+					<div class="two-numbers">
+						<div><span class="number">782</span> <span class="label">Planètes découvertes</span></div>
+						<div><span class="number">1995</span> <span class="label">Année 1è découverte</span></div>
+					</div>
+					<div class="c3-chart radial" data-method="radial"></div>
+				</div>
+
 				<p>
 					Egalement appelée la spectroscopie Doppler, c’est la méthode qui a permis la toute première détection d’une exoplanète, 51 Peg b, par les astrophysiciens suisses Michel Mayor et Didier Queloz en 1995 - une découverte si cruciale pour la science qu’ils reçurent tous deux le prix Nobel de physique en 2019.
 				</p>
@@ -81,7 +95,7 @@
 				</p>
 
 				<p>
-					Etoile et planète tournent autour du centre de gravité du système formé par les deux astres, comme dans l’animation ci-dessous. L’étoile, beaucoup plus massive, bouge évidemment beaucoup moins que la planète qui en fait le tour. 
+					Etoile et planète tournent autour du centre de gravité du système formé par les deux astres, comme dans l’animation ci-dessous. L’étoile, beaucoup plus massive, bouge évidemment beaucoup moins que la planète qui en fait le tour.
 				</p>
 
 				<img src="img/gif.gif" alt="">
@@ -90,18 +104,18 @@
 				<h3>Effet Doppler</h3>
 
 				<p>
-					Depuis la Terre, on voit l’étoile osciller en se rapprochant puis en s’éloignant légèrement, et ainsi de suite. Ces oscillations sont évidemment indiscernables à l’oeil nu, et à peine perceptibles par les télescopes. Pour cette raison, les scientifiques mesurent le spectre lumineux de l’étoile, une méthode bien plus précise pour s’assurer la présence des oscillations. 
+					Depuis la Terre, on voit l’étoile osciller en se rapprochant puis en s’éloignant légèrement, et ainsi de suite. Ces oscillations sont évidemment indiscernables à l’oeil nu, et à peine perceptibles par les télescopes. Pour cette raison, les scientifiques mesurent le spectre lumineux de l’étoile, une méthode bien plus précise pour s’assurer la présence des oscillations.
 				</p>
 
 				<img src="img/onde.png" alt="">
 				<span class="caption">Ma belle légende</span>
 
 				<p>
-					La lumière voyage sous forme d’ondes qui sont captées par un spectromètre couplé à un télescope. Le train d’ondes, ou spectre, a la particularité de changer de couleur en fonction des mouvements de l’astre. Si l’étoile se rapproche de la Terre, le spectre devient bleu car les ondes «se compressent» (la longueur d’onde de la lumière diminue), ou rouge si elle s’éloigne car les ondes «s’étirent» (la longueur d’onde augmente), comme dans l’animation. 
+					La lumière voyage sous forme d’ondes qui sont captées par un spectromètre couplé à un télescope. Le train d’ondes, ou spectre, a la particularité de changer de couleur en fonction des mouvements de l’astre. Si l’étoile se rapproche de la Terre, le spectre devient bleu car les ondes «se compressent» (la longueur d’onde de la lumière diminue), ou rouge si elle s’éloigne car les ondes «s’étirent» (la longueur d’onde augmente), comme dans l’animation.
 				</p>
 
 				<p>
-					C’est <b>l’effet Doppler</b>, dont on fait l’expérience non pas avec une onde lumineuse, mais une onde sonore, lorsque passe un camion aux sirènes hurlantes. A mesure qu’il se rapproche, le son devient de plus en plus aigu (les ondes se compressent, leur fréquence augmente) puis de plus en plus grave lorsqu’il s’éloigne (les ondes s’étirent, leur fréquence diminue). 
+					C’est <b>l’effet Doppler</b>, dont on fait l’expérience non pas avec une onde lumineuse, mais une onde sonore, lorsque passe un camion aux sirènes hurlantes. A mesure qu’il se rapproche, le son devient de plus en plus aigu (les ondes se compressent, leur fréquence augmente) puis de plus en plus grave lorsqu’il s’éloigne (les ondes s’étirent, leur fréquence diminue).
 				</p>
 
 				<h3>Elodie, Espresso</h3>
@@ -119,8 +133,8 @@
 					La méthode des vitesses radiales est la deuxième méthode la plus prolifique en termes d’exoplanètes découvertes. Elle peut être utilisée pour découvrir de nouvelles planètes, ou pour confirmer des candidates potentielles détectées par le biais d’autres méthodes.
 
 				</p>
-				
-			</div>	
+
+			</div>
 
 			<div id="slide02" class="slide slide02">
 				<span class="keyword alt">Chapitre 2</span>
@@ -128,8 +142,14 @@
 					Méthode des transits
 					<span class="subtitle">La chasse aux mini-éclipses</span>
 				</h2>
-				
-				<img src="img/tableau.png" alt="" class="tableau">
+
+				<div class="factsheet">
+					<div class="two-numbers">
+						<div><span class="number">3135</span> <span class="label">Planètes découvertes</span></div>
+						<div><span class="number">2002</span> <span class="label">Année 1è découverte</span></div>
+					</div>
+					<div class="c3-chart transits" data-method="transits"></div>
+				</div>
 
 				<p>
 					Comme lors d’une éclipse solaire, lorsque la Lune obscurcit le Soleil, le passage d’une exoplanète devant son étoile - <b>ou transit</b> - diminue sa luminosité.
@@ -157,7 +177,7 @@
 				</video>
 
 				<p>
-					Premièrement, son <b>rayon</b>. Plus la luminosité diminue, plus les diamètres respectifs de l’étoile et de la planète sont proches. Etant donné que la taille de l’étoile peut être déduite assez précisément de l’analyse de sa composition spectrale, la méthode des transits permet donc une estimation assez précise du rayon des exoplanètes. 
+					Premièrement, son <b>rayon</b>. Plus la luminosité diminue, plus les diamètres respectifs de l’étoile et de la planète sont proches. Etant donné que la taille de l’étoile peut être déduite assez précisément de l’analyse de sa composition spectrale, la méthode des transits permet donc une estimation assez précise du rayon des exoplanètes.
 
 				</p>
 
@@ -188,11 +208,11 @@
 				</p>
 
 				<p>
-					Depuis, un autre instrument, TESS, a rejoint Kepler et scrute des planètes plus petites. 
+					Depuis, un autre instrument, TESS, a rejoint Kepler et scrute des planètes plus petites.
 				</p>
-				
-				
-			</div>	
+
+
+			</div>
 
 			<div id="slide03" class="slide slide03">
 				<span class="keyword alt">Chapitre 3</span>
@@ -200,8 +220,14 @@
 					Les microlentilles gravitationnelles
 					<span class="subtitle">Einstein, encore!</span>
 				</h2>
-				
-				<img src="img/tableau.png" alt="" class="tableau">
+
+				<div class="factsheet">
+					<div class="two-numbers">
+						<div><span class="number">86</span> <span class="label">Planètes découvertes</span></div>
+						<div><span class="number">2004</span> <span class="label">Année 1è découverte</span></div>
+					</div>
+					<div class="c3-chart microlens" data-method="microlens"></div>
+				</div>
 
 				<p>
 					Avez-vous déjà essayé de faire du feu avec une loupe? Oui c’est dangereux, mais le phénomène est bien pratique pour expliquer l’action des lentilles gravitationnelles.
@@ -231,7 +257,7 @@
 				</p>
 
 				<p>
-					Mais tout cela ne nous renseigne pas sur les exoplanètes! Lorsqu’il y en a une près de l’étoile-lentille, celle-ci joue également le rôle de lentille et amplifie encore un peu plus la lumière de l’étoile au loin. 
+					Mais tout cela ne nous renseigne pas sur les exoplanètes! Lorsqu’il y en a une près de l’étoile-lentille, celle-ci joue également le rôle de lentille et amplifie encore un peu plus la lumière de l’étoile au loin.
 				</p>
 
 				<p>
@@ -245,8 +271,8 @@
 				<p>
 					Ces observations sont menées par divers réseaux de télescopes dans le monde.
 				</p>
-				
-			</div>	
+
+			</div>
 
 			<div id="slide04" class="slide slide04">
 				<span class="keyword alt">Chapitre 4</span>
@@ -254,8 +280,15 @@
 					L’astrométrie
 					<span class="subtitle">Ça gigote, mais pas trop</span>
 				</h2>
-				
-				<img src="img/tableau.png" alt="" class="tableau">
+
+				<div class="factsheet">
+					<div class="two-numbers">
+						<div><span class="number">1</span> <span class="label">Planètes découvertes</span></div>
+						<div><span class="number">2013</span> <span class="label">Année 1è découverte</span></div>
+					</div>
+					<div class="c3-chart astrometry" data-method="astrometry"></div>
+				</div>
+
 
 				<p>
 					Si vous avez lu le premier chapitre sur la méthode des vitesses radiales, alors vous savez déjà que de minuscules oscillations des étoiles peuvent renseigner sur la présence d’exoplanètes - en raison de l’attraction gravitationnelle réciproquement exercée par les deux corps célestes.
@@ -287,7 +320,7 @@
 				</p>
 
 				<p>
-					Selon les bases de données consultées, on trouve divers nombres d’exoplanètes détectées grâce à l’astrométrie: une seule pour la NASA, une dizaine pour exoplanets.eu … 
+					Selon les bases de données consultées, on trouve divers nombres d’exoplanètes détectées grâce à l’astrométrie: une seule pour la NASA, une dizaine pour exoplanets.eu …
 
 				</p>
 
@@ -295,8 +328,8 @@
 					Une chose est sûre: l’astrométrie n’a pas été très prolifique jusqu’ici. Elle n’en demeure pas moins une méthode cruciale qui va connaitre un grand pas en avant avec plusieurs missions dont celle du satellite européen d’astrométrie GAIA qui a, en août 2019, permis de dresser la carte de la Voie lactée la plus précise avec plus d’un milliard d’étoiles recensées. De quoi occuper les chasseurs d’exoplanètes pendant un bon moment.
 
 				</p>
-				
-			</div>	
+
+			</div>
 
 			<div id="slide05" class="slide slide05">
 				<span class="keyword alt">Chapitre 5</span>
@@ -305,8 +338,14 @@
 					<span class="subtitle">Selfies d’exoplanètes</span>
 				</h2>
 
-				<img src="img/tableau.png" alt="" class="tableau">
-				
+				<div class="factsheet">
+					<div class="two-numbers">
+						<div><span class="number">47</span> <span class="label">Planètes découvertes</span></div>
+						<div><span class="number">2004</span> <span class="label">Année 1è découverte</span></div>
+					</div>
+					<div class="c3-chart imagery" data-method="imagery"></div>
+				</div>
+
 				<p>
 					Au risque de contredire ce qui a été évoqué en guise d’introduction, la détection directe de planètes est possible - oui oui, avec des photos. Mais vous pouvez ranger vos smartphones, car le phénomène reste exceptionnel.
 
@@ -336,9 +375,9 @@
 				<p>
 					intérêt : des images réelles pourraient révéler la présence d’océans, ou encore fournir des indices précieux sur la composition atmosphérique de la planète.
 				</p>
-				
-				
-			</div>	
+
+
+			</div>
 
 			<div id="slide06" class="slide slide06">
 				<span class="keyword alt">Chapitre 6</span>
@@ -347,14 +386,24 @@
 					<span class="subtitle">Étudier les exoplanètes</span>
 				</h2>
 
-				<img src="img/tableau.png" alt="" class="tableau">
-				
+				<div class="factsheet">
+					<div class="two-numbers">
+						<div><span class="number">1234</span> <span class="label">Un truc super</span></div>
+						<div><span class="number">1234</span> <span class="label">Un truc super</span></div>
+					</div>
+					<div class="two-numbers">
+						<div><span class="number">1234</span> <span class="label">Un truc super</span></div>
+						<div><span class="number">1234</span> <span class="label">Un truc super</span></div>
+					</div>
+
+				</div>
+
 				<p>
 					Maintenant que nous avons attrapé de nombreuses exoplanètes (plus de 4000 fin 2019), reste à toutes les étudier afin d’en savoir plus sur leur atmosphère, leur composition, et pourquoi pas sur leur capacité à abriter la vie.
 
 				</p>
 				<p>
-					C’est exactement le but de l’instrument <b>Cheops</b> (CHaracterizing ExOplanet Satellite selon l’acronyme anglais), petit télescope de 280 kg lancé en décembre 2019.Il s’agit du tout premier télescope spatial construit dans le cadre d’un projet suisse pour le compte de l’Agence spatiale européenne (ESA). 
+					C’est exactement le but de l’instrument <b>Cheops</b> (CHaracterizing ExOplanet Satellite selon l’acronyme anglais), petit télescope de 280 kg lancé en décembre 2019.Il s’agit du tout premier télescope spatial construit dans le cadre d’un projet suisse pour le compte de l’Agence spatiale européenne (ESA).
 				</p>
 
 				{# <video autoplay loop muted>
@@ -365,24 +414,24 @@
 					Sa mission: observer des centaines d’exoplanètes gravitant autour de leur étoile. Et, pourquoi pas, trouver une «deuxième Terre»? Il ne va donc pas traquer de nouvelles exoplanètes, mais observer des corps célestes déjà connus afin de déterminer leur nature. Il ciblera préférentiellement des planètes de rayon un à six fois plus grand que celui de la Terre - des «super Terres».
 				</p>
 				<p>
-					Si vous avez bien retenu ce que vous avez lu dans les chapitres précédents, vous savez que la méthode des vitesses radiales permet d’obtenir une masse minimale pour une planète donnée. Et que la méthode des transits donne une estimation de son diamètre. De ces deux variables, les astrophysiciens déduisent la densité et obtiennent ainsi une première idée de leur composition. 
+					Si vous avez bien retenu ce que vous avez lu dans les chapitres précédents, vous savez que la méthode des vitesses radiales permet d’obtenir une masse minimale pour une planète donnée. Et que la méthode des transits donne une estimation de son diamètre. De ces deux variables, les astrophysiciens déduisent la densité et obtiennent ainsi une première idée de leur composition.
 
 				</p>
 				<p>
-					Ce sont justement ces phénomènes de transit qui seront scrutés par le petit Cheops. Comme exposé au chapitre 2, le principal défi sera d’atteindre une précision photométrique extrême, afin de pouvoir détecter avec certitude les infimes baisses de luminosité des étoiles. Le petit Cheops devra pour cela se débarrasser des lumières parasites du Soleil et même de la Lune (qui en réfléchit déjà trop pour ses instruments). 
+					Ce sont justement ces phénomènes de transit qui seront scrutés par le petit Cheops. Comme exposé au chapitre 2, le principal défi sera d’atteindre une précision photométrique extrême, afin de pouvoir détecter avec certitude les infimes baisses de luminosité des étoiles. Le petit Cheops devra pour cela se débarrasser des lumières parasites du Soleil et même de la Lune (qui en réfléchit déjà trop pour ses instruments).
 				</p>
 
 				<p>
-					Pour cela, il sera orienté de telle sorte qu’il ne regardera jamais dans la direction de ces astres, pas plus qu’il ne regardera des exoplanètes à travers l’atmosphère de la Terre. 
+					Pour cela, il sera orienté de telle sorte qu’il ne regardera jamais dans la direction de ces astres, pas plus qu’il ne regardera des exoplanètes à travers l’atmosphère de la Terre.
 					Cheops pourra aussi caractériser un peu mieux les atmosphères de certains exoplanètes. Bref, les scientifiques peaufineront leurs connaissances grâce à ce petit bout de Suisse en orbite à 700 kilomètres au-dessus de nos têtes.
 				</p>
-				
-				
-			</div>	
+
+
+			</div>
 
 
 
-			<div class="bottom-nav"> 
+			<div class="bottom-nav">
 				<ul>
 					<li>
 						<a href="#slide00">
@@ -426,7 +475,7 @@
 							<img src="img/planet-mars-glow.svg" alt="" class="glow">
 						</a>
 					</li>
-				</ul> 
+				</ul>
 				<!-- <span class="starmap">
 					<ul>
 						<li><a href="#">1</a></li>
@@ -440,13 +489,16 @@
 				<span class="next">Next</span> -->
 			</div>
 		</div>
-			
+
 
 		<!--<script src="js/tabletop.js"></script>-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script> -->
 		<!-- <script src="js/handlebars-v4.0.4.js"></script> -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+		<script src="js/d3.v5.min.js"></script>
+		<script src="js/c3.min.js"></script>
+		<script src="js/c3-charts.js"></script>
 		<script src="js/main.js"></script>
 		{{ block('footer_brand') }}
 	</body>

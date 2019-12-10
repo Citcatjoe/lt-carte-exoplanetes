@@ -1,13 +1,12 @@
-jQuery(document).ready(function($) 
+jQuery(document).ready(function($)
 {
 
-
-
 	$("h1").click(function(){
+		// bah merci
 		alert('con');
 	});
 
-	var sectionFrom, 
+	var sectionFrom,
 		$slide = $('.slide'),
 		$slideActive = $('.slide.is-active'),
 		$body = $('body'),
@@ -78,10 +77,10 @@ jQuery(document).ready(function($)
 	// 		  	sectionToID = $(this).attr('href'),
 	// 		  	sectionTo = $('div' + sectionToID);
 
-	// 		if(sectionFrom.attr('id') != sectionTo.attr('id')) 
+	// 		if(sectionFrom.attr('id') != sectionTo.attr('id'))
 	// 		{
-	// 			scrollToSection(sectionFrom, sectionTo, $thisGlow, $thisNoGlow, $allGlow);	
-	// 		} 
+	// 			scrollToSection(sectionFrom, sectionTo, $thisGlow, $thisNoGlow, $allGlow);
+	// 		}
 	// 	}
 	// });
 
@@ -106,16 +105,16 @@ jQuery(document).ready(function($)
 			  	sectionToID = $(this).attr('href'),
 			  	sectionTo = $('div' + sectionToID);
 
-			if(sectionFrom.attr('id') != sectionTo.attr('id')) 
+			if(sectionFrom.attr('id') != sectionTo.attr('id'))
 			{
-				scrollToSection(sectionFrom, sectionTo, $thisGlow, $thisNoGlow, $allGlow);	
-			} 
+				scrollToSection(sectionFrom, sectionTo, $thisGlow, $thisNoGlow, $allGlow);
+			}
 		}
 	});
 
 	function scrollToSection(sectionFrom, sectionTo, $thisGlow, $thisNoGlow, $allGlow){
 
-		
+
 		var tlDown = new TimelineMax({onComplete: setActiveSlide(sectionFrom, sectionTo)});
 		var tlUp = new TimelineMax();
 		var tlFromHome = new TimelineMax();
@@ -133,7 +132,7 @@ jQuery(document).ready(function($)
 					.to($allGlow, 0.25, {autoAlpha: 0, ease:Power4.easeInOut})
 					.to($thisGlow, 0.25, {autoAlpha: 1, ease:Power4.easeInOut}, '0')
 
-					
+
 					.to($homePlanet, 1, {y: '+=300'})
 					.to(sectionFrom, 1, {autoAlpha: 0, ease:Power4.easeInOut, clearProps: 'all'})
 
@@ -159,7 +158,7 @@ jQuery(document).ready(function($)
 				.set($body, {className: '-=is-animating'});
 			}
 
-			
+
 		}
 
 		else
@@ -180,7 +179,7 @@ jQuery(document).ready(function($)
 					.to($homePlanet, 1, {y: '-=300'})
 
 					.to(sectionTo, 1, {autoAlpha: 1, ease:Power4.easeInOut})
-					
+
 					.set($body, {className: '-=is-animating'});
 
 			}
@@ -196,10 +195,10 @@ jQuery(document).ready(function($)
 				.to($thisGlow, 0.25, {autoAlpha: 1, ease:Power4.easeInOut})
 				.to(sectionFrom, 0.5, {x: '100%', ease:Power4.easeInOut}, '0')
 
-				
+
 				.set($body, {className: '-=is-animating'});
 			}
-			
+
 		}
 	}
 
@@ -209,16 +208,26 @@ jQuery(document).ready(function($)
 		sectionFrom.removeClass('is-active');
 		sectionTo.addClass('is-active');
 
+		// Ajout + animation du graphique
+		var c3 = sectionTo.find('.c3-chart');
+		if(c3){
+			drawChart(c3.data('method'));
+		}
+
+
+
+
+
 		// Highlight current slide in the navigation
 		// var currentSlideIndex = parseInt($(sectionTo).attr('id').slice(-2)) -1;
 		// $navLi.removeAttr('class');
 		// $navLi.eq(currentSlideIndex).addClass('is-active');
-		
+
 	}
 
 
 
-	
-		
+
+
 
 });
