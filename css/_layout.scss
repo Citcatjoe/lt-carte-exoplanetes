@@ -1,9 +1,40 @@
+ .home-menu
+ {
+    padding-top: 20px;
+    span.chapter
+    {
+        display:block;
+        color: white;
+        margin-bottom: 2px;
+        font-weight: 500;
+
+    }
+
+    span.title
+    {
+        font-size: 1.2rem;
+        color: #ffbffc;
+        text-decoration: underline;
+    }
+
+    text-align: center;
+
+    li
+    {
+    margin-bottom: 15px;
+    font-family: 'Avenir LT Std';
+   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+    }
+ }
+
  video
  {
     width: 100%;
     border: 1px solid $border;
     margin-top: 15px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
  }
 
  body
@@ -46,16 +77,20 @@
 
         .factsheet
         {
+            padding-top: 15px;
+            padding-bottom: 5px;
           color: #eee;
           font-family: 'Avenir LT Std'; /* TODO pour César: voir si bonne fonte */
-          border: 1px solid #eee;
-          border-width: 1px 0 1px 0;
+          border-top: 1px solid #4c444c;
+          border-bottom: 1px solid #4c444c;
           position: relative;
           margin-bottom: 2em;
 
           .two-numbers
           {
-            min-height: 80px;
+            height: 70px;
+            margin-bottom: 15px;
+            overflow: auto;
 
             div{
               float: left;
@@ -66,17 +101,22 @@
 
             .number
             {
-              font-size: 3em;
+              font-size: 2.5em;
               display: block;
+
             }
             .label{
               color: #999;
+              display: block;
+              -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
             }
           }
 
           /* graphs */
           .c3-chart{
             // background: #333;
+            margin-top: -15px;
 
             .c3-text, .label{
               color: #eee;
@@ -111,6 +151,7 @@
         &.slide00
         {
         padding-top: 30%;
+        background: rgba(0, 0, 0, .5);
         }
 
         &.slide01

@@ -1575,6 +1575,50 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/img-astrometrie.jpg": {
+		"ft": 16384,
+		"iS": 165056,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/img-astrometrie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/img-cheops.jpeg": {
+		"ft": 16384,
+		"iS": 105660,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/img-cheops.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/img-imagerie-directe.jpg": {
+		"ft": 16384,
+		"iS": 10976,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/img-imagerie-directe.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/img-microlentilles.jpg": {
+		"ft": 16384,
+		"iS": 53864,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/img-microlentilles.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/img/inconnu.jpg": {
 		"ft": 16384,
 		"iS": 43461,
@@ -2187,6 +2231,61 @@
 		"oAP": "/inspiration/space-ui-kit-walkthrough.sketch",
 		"oF": 0
 		},
+	"/js/c3-charts-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/c3-charts-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/c3-charts.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/c3-charts-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/c3-graphs-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/c3-graphs-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/c3.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/c3.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/d3.v5.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/d3.v5.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/handlebars-v4.0.4.js": {
 		"bF": 0,
 		"ft": 64,
@@ -2287,13 +2386,13 @@
 		},
 	"/social.jpg": {
 		"ft": 16384,
-		"iS": 202754,
+		"iS": 42657,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/social.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/social2.jpg": {

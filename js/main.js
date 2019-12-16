@@ -132,9 +132,9 @@ jQuery(document).ready(function($)
 					.to($allGlow, 0.25, {autoAlpha: 0, ease:Power4.easeInOut})
 					.to($thisGlow, 0.25, {autoAlpha: 1, ease:Power4.easeInOut}, '0')
 
-
-					.to($homePlanet, 1, {y: '+=300'})
 					.to(sectionFrom, 1, {autoAlpha: 0, ease:Power4.easeInOut, clearProps: 'all'})
+					.to($homePlanet, 1, {y: '+=400'})
+					
 
 					.to($bottomNav, 0.5, {autoAlpha: 1, ease:Power4.easeInOut})
 
@@ -176,7 +176,7 @@ jQuery(document).ready(function($)
 					.to(sectionTo, 0, {autoAlpha: 0, x: '0%', ease:Power4.easeInOut})
 					.to($bottomNav, 1, {autoAlpha: 0, ease:Power4.easeInOut})
 
-					.to($homePlanet, 1, {y: '-=300'})
+					.to($homePlanet, 1, {y: '-=400'})
 
 					.to(sectionTo, 1, {autoAlpha: 1, ease:Power4.easeInOut})
 

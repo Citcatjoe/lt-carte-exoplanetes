@@ -24,6 +24,9 @@ img {
   width: 100%;
   margin-bottom: 25px; }
 
+.border {
+  border: 1px solid #4c444c; }
+
 .caption {
   text-align: right;
   display: block;
@@ -52,11 +55,12 @@ img {
 h1 {
   font-size: 2.5rem;
   line-height: 2.5rem;
-  font-family: 'Avenir LT Std';
   margin-bottom: 15px;
   color: white;
   font-weight: 100;
+  margin-bottom: 40px;
   text-align: center;
+  font-family: 'Avenir LT Std';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
   h1 i {
@@ -99,7 +103,7 @@ p {
   margin-bottom: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #C0C0C0; }
+  color: #dadada; }
   p span {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -253,11 +257,29 @@ textarea {
   clear: both; }
 
 /*/HTML5 Boilerplate) Clearfix, hidden, visuallyhidden, invisible...*/
+.home-menu {
+  padding-top: 20px;
+  text-align: center; }
+  .home-menu span.chapter {
+    display: block;
+    color: white;
+    margin-bottom: 2px;
+    font-weight: 500; }
+  .home-menu span.title {
+    font-size: 1.2rem;
+    color: #ffbffc;
+    text-decoration: underline; }
+  .home-menu li {
+    margin-bottom: 15px;
+    font-family: 'Avenir LT Std';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+
 video {
   width: 100%;
   border: 1px solid #4c444c;
   margin-top: 15px;
-  margin-bottom: 35px; }
+  margin-bottom: 25px; }
 
 body {
   position: relative;
@@ -288,43 +310,53 @@ body {
     transform: translateX(100%);
     padding-bottom: 80px; }
     .container .slide .factsheet {
+      padding-top: 15px;
+      padding-bottom: 5px;
       color: #eee;
       font-family: 'Avenir LT Std';
       /* TODO pour César: voir si bonne fonte */
-      border: 1px solid #eee;
-      border-width: 1px 0 1px 0;
+      border-top: 1px solid #4c444c;
+      border-bottom: 1px solid #4c444c;
       position: relative;
       margin-bottom: 2em;
       /* graphs */ }
       .container .slide .factsheet .two-numbers {
-        min-height: 80px; }
+        height: 70px;
+        margin-bottom: 15px;
+        overflow: auto; }
         .container .slide .factsheet .two-numbers div {
           float: left;
           width: 50%;
           padding-top: 0.8em;
           text-align: center; }
         .container .slide .factsheet .two-numbers .number {
-          font-size: 3em;
+          font-size: 2.5em;
           display: block; }
         .container .slide .factsheet .two-numbers .label {
-          color: #999; }
-      .container .slide .factsheet .c3-chart .c3-text, .container .slide .factsheet .c3-chart .label {
-        color: #eee;
-        font-family: 'Avenir LT Std';
-        /* TODO pour César: voir si bonne fonte */
-        font-size: 12px; }
-      .container .slide .factsheet .c3-chart text {
-        fill: #eee !important;
-        font-family: 'Avenir LT Std';
-        font-size: 12px; }
-      .container .slide .factsheet .c3-chart line, .container .slide .factsheet .c3-chart .c3-axis {
-        stroke: #eee; }
-      .container .slide .factsheet .c3-chart .tick line, .container .slide .factsheet .c3-chart .domain {
-        display: none; }
+          color: #999;
+          display: block;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale; }
+      .container .slide .factsheet .c3-chart {
+        margin-top: -15px; }
+        .container .slide .factsheet .c3-chart .c3-text, .container .slide .factsheet .c3-chart .label {
+          color: #eee;
+          font-family: 'Avenir LT Std';
+          /* TODO pour César: voir si bonne fonte */
+          font-size: 12px; }
+        .container .slide .factsheet .c3-chart text {
+          fill: #eee !important;
+          font-family: 'Avenir LT Std';
+          font-size: 12px; }
+        .container .slide .factsheet .c3-chart line, .container .slide .factsheet .c3-chart .c3-axis {
+          stroke: #eee; }
+        .container .slide .factsheet .c3-chart .tick line, .container .slide .factsheet .c3-chart .domain {
+          display: none; }
       .container .slide .factsheet .clear {
         clear: both; }
     .container .slide.slide00 {
-      padding-top: 30%; }
+      padding-top: 30%;
+      background: rgba(0, 0, 0, 0.5); }
     .container .slide.slide01 {
       padding-top: 65px;
       background: rgba(0, 0, 0, 0.5); }
