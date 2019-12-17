@@ -1,12 +1,13 @@
 {
-	"title": "En 2100, il ne restera au mieux qu’une cinquantaine de glaciers en Suisse",
-	"description": "Si les températures s’élèvent de 2 degrés d’ici à la fin du siècle, seuls 48 glaciers survivraient en Suisse. ",
+	"title": "Attraper une exoplanète, mode d'emploi",
+	"description": "Si petites, si loin, si sombres. Observer des exoplanètes semble impossible. Heureusement, les astrophysiciens ont plus d’un tour dans leur sac. Traquez les exoplanètes avec eux!",
 	"imgSocial": "social.jpg", 
-
+	"authors": "César Greppin, Fabien Goubet, Isabelle Boudjkhi, Paul Ronga",
 	"navBarStyle": "normal",
 	"navBarOffset": "0",
 	"navBarLocked": true,
 
+	"pubdate": "2019-12-17T08:00:00+00:00",
 	"partner": {
 		"logo": "img/empty.png",
 		"link": "http://www.letemps.ch"

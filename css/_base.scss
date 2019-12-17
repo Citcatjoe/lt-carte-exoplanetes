@@ -109,6 +109,10 @@ body
     @include breakpoint(sm) {   
         //margin-top: 40px;
     }
+
+  @media screen and (min-width: 1200px) {
+      background-image: url("img/bg-desk.png"); 
+  }
 }
 
 img
@@ -188,6 +192,10 @@ h1
   font-family: 'Avenir LT Std';
    -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @media screen and (min-width: 500px) {
+    
+  }
 
   i 
   {

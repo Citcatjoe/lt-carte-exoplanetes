@@ -7,7 +7,7 @@
 		"uuidString": "47C26614-9BD1-4FAF-AAA5-0BEA91D32DC5"
 		}
 	],
-"creatorBuild": "31934",
+"creatorBuild": "31491",
 "files": {
 	"/css/_barbarian_reset.scss": {
 		"aP": 0,
@@ -1361,13 +1361,27 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"/img/aletsch.gif": {
-		"ft": 4194304,
-		"iS": 2330445,
+	"/img/bg-desk-1.jpg": {
+		"ft": 16384,
+		"iS": 498637,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/aletsch.gif",
+		"oAP": "/img/bg-desk-1.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/bg-mobile.jpg": {
+		"ft": 16384,
+		"iS": 111139,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/bg-mobile.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"/img/bg-mobile.png": {
 		"ft": 32768,
@@ -1489,7 +1503,7 @@
 		},
 	"/img/head.jpg": {
 		"ft": 16384,
-		"iS": 91834,
+		"iS": 44396,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/head.jpg",
@@ -1586,6 +1600,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/img-cheops-2.jpeg": {
+		"ft": 16384,
+		"iS": 240992,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/img-cheops-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/img/img-cheops.jpeg": {
 		"ft": 16384,
 		"iS": 105660,
@@ -1597,12 +1622,67 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/img-cheops.jpg": {
+		"ft": 16384,
+		"iS": 99727,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/img-cheops.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/img-espresso.jpg": {
+		"ft": 16384,
+		"iS": 103943,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/img-espresso.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/img-imagerie-directe-2.jpg": {
+		"ft": 16384,
+		"iS": 11590,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/img-imagerie-directe-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/img/img-imagerie-directe.jpg": {
 		"ft": 16384,
 		"iS": 10976,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/img-imagerie-directe.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/img-kepler.jpeg": {
+		"ft": 16384,
+		"iS": 303673,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/img-kepler.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/img-microlentille.jpeg": {
+		"ft": 16384,
+		"iS": 111366,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/img-microlentille.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -2060,6 +2140,14 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/index-OKLT.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/index-OKLT.php",
+		"oF": 0
+		},
 	"/index.html 2.twig": {
 		"cB": 0,
 		"ft": 8192,
@@ -2084,20 +2172,20 @@
 		"oAP": "/index.php",
 		"oF": 0
 		},
+	"/index___.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/index___.php",
+		"oF": 0
+		},
 	"/indexH2.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/indexH2.php",
-		"oF": 0
-		},
-	"/indexLT.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/indexLT.php",
 		"oF": 0
 		},
 	"/inspiration/CGpcN9CXIAAinc1.jpg": {
@@ -2386,13 +2474,13 @@
 		},
 	"/social.jpg": {
 		"ft": 16384,
-		"iS": 42657,
+		"iS": 44396,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/social.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/social2.jpg": {
@@ -2432,6 +2520,14 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"/templates/t_blocks.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/t_blocks.html.twig",
+		"oF": 0
 		},
 	"/variables.json": {
 		"ft": 524288,
@@ -7493,6 +7589,14 @@
 		"oAP": "/vid/astometry.mp4",
 		"oF": 0
 		},
+	"/vid/cheops.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vid/cheops.mp4",
+		"oF": 0
+		},
 	"/vid/direct-imaging.mp4": {
 		"cB": 0,
 		"ft": 8192,
@@ -7509,12 +7613,12 @@
 		"oAP": "/vid/gravitational_microlensing.mp4",
 		"oF": 0
 		},
-	"/vid/radial velocity.mp4": {
+	"/vid/radial_velocity.mp4": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/vid/radial velocity.mp4",
+		"oAP": "/vid/radial_velocity.mp4",
 		"oF": 0
 		},
 	"/vid/transit-method-multiple-planets.mp4": {
@@ -7986,7 +8090,6 @@
 			"flagValue": -1
 			}
 		},
-	"environmentVariablesString": "NODE_ENV:::production",
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
 	"esLintEnvironmentsMask": 1,
@@ -8088,10 +8191,6 @@
 			"optionString": "'all'"
 			},
 		"default-case": {
-			"active": 0,
-			"optionString": ""
-			},
-		"default-param-last": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -8441,10 +8540,6 @@
 			},
 		"no-implied-eval": {
 			"active": 0,
-			"optionString": ""
-			},
-		"no-import-assign": {
-			"active": 1,
 			"optionString": ""
 			},
 		"no-inline-comments": {
@@ -8871,10 +8966,6 @@
 			"active": 0,
 			"optionString": "{'allowEmptyReject': false}"
 			},
-		"prefer-regex-literals": {
-			"active": 0,
-			"optionString": ""
-			},
 		"prefer-rest-params": {
 			"active": 0,
 			"optionString": ""
@@ -9029,7 +9120,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http://localhost:8888/lt-carte-exoplanetes",
+	"externalServerAddress": "http://localhost:8080/lt-carte-exoplanetes",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
@@ -9483,6 +9574,7 @@
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 1,
 		"enableJavascript": 0,
+		"ieCompatibility": 0,
 		"mathStyle": 0,
 		"outputStyle": 0,
 		"rewriteURLStyle": 0,
@@ -9622,9 +9714,6 @@
 	"npmTargetDependencyListType": 1,
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
-	"rollupExternals": "",
-	"rollupReplacements": "process.env.NODE_ENV:::$NODE_ENV,,,ENVIRONMENT:::$NODE_ENV",
-	"rollupTreeshakingEnabled": 1,
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules",
 	"sourceFolderName": "source",
 	"susyVersion": 3,

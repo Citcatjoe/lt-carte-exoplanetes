@@ -18,6 +18,9 @@ body {
   height: 100%;
   overflow: hidden;
   font-size: 16px; }
+  @media screen and (min-width: 1200px) {
+    body {
+      background-image: url("img/bg-desk.png"); } }
 
 img {
   display: block;
@@ -257,6 +260,36 @@ textarea {
   clear: both; }
 
 /*/HTML5 Boilerplate) Clearfix, hidden, visuallyhidden, invisible...*/
+.credits {
+  display: block;
+  font-family: 'Avenir LT Std';
+  font-weight: normal;
+  font-size: 0.85rem;
+  line-height: 18px;
+  margin-bottom: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #dadada;
+  margin-top: 100px;
+  border-top: 1px solid #4c444c;
+  padding-top: 10px; }
+
+.slide {
+  scrollbar-color: #323232 black;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch; }
+
+.slide::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #323232; }
+
+.slide::-webkit-scrollbar {
+  width: 7px;
+  background-color: #323232; }
+
+.slide::-webkit-scrollbar-thumb {
+  background-color: #000000; }
+
 .home-menu {
   padding-top: 20px;
   text-align: center; }
@@ -265,12 +298,19 @@ textarea {
     color: white;
     margin-bottom: 2px;
     font-weight: 500; }
+    .home-menu span.chapter.serif {
+      font-family: 'EB Garamond';
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: block;
+      font-style: italic;
+      font-size: 1.2rem; }
   .home-menu span.title {
     font-size: 1.2rem;
     color: #ffbffc;
     text-decoration: underline; }
   .home-menu li {
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
     font-family: 'Avenir LT Std';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
@@ -283,15 +323,24 @@ video {
 
 body {
   position: relative;
-  background: url("../img/bg-mobile.png");
+  background: url("../img/bg-mobile.jpg");
   background-size: cover;
   background-position: center center; }
+  @media screen and (min-width: 1200px) {
+    body {
+      background-image: url("../img/bg-desk-1.jpg"); } }
   body .planet {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 40%);
     width: 170%; }
+    @media screen and (min-width: 500px) {
+      body .planet {
+        transform: translate(-50%, 60%); } }
+    @media screen and (min-width: 1200px) {
+      body .planet {
+        transform: translate(-50%, 75%); } }
 
 .container {
   position: relative;
@@ -303,11 +352,12 @@ body {
   .container .slide {
     position: absolute;
     overflow: scroll;
+    overflow-x: hidden;
     width: 100%;
     height: 100%;
     color: gray;
     padding: 20px;
-    transform: translateX(100%);
+    transform: translateX(100vw);
     padding-bottom: 80px; }
     .container .slide .factsheet {
       padding-top: 15px;

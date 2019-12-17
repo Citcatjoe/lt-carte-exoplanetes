@@ -1,9 +1,37 @@
 jQuery(document).ready(function($)
 {
 
+	if($(window).width() > 1050)
+	{
+		var planetDistanceTravel = 400;
+	}
+
+	//ON ARRIVE SUR IPAD PRO
+	if($(window).width() < 1050)
+	{
+		// var slideXDistanceTravel = 140;
+	}
+
+	//ON ARRIVE SUR PETIT IPAD
+	if($(window).width() < 800)
+	{
+		var planetDistanceTravel = 400;
+		// var slideXDistanceTravel = 115;
+	}
+
+	//ON ARRIVE SUR MOBILE
+	if($(window).width() < 500)
+	{
+		var planetDistanceTravel = 400;
+		// var slideXDistanceTravel = 100;
+	}
+
+	var slideXDistanceTravel = $(window).width() /2;
+
+
 	$("h1").click(function(){
 		// bah merci
-		alert('con');
+		// alert('con');
 	});
 
 	var sectionFrom,
@@ -133,7 +161,7 @@ jQuery(document).ready(function($)
 					.to($thisGlow, 0.25, {autoAlpha: 1, ease:Power4.easeInOut}, '0')
 
 					.to(sectionFrom, 1, {autoAlpha: 0, ease:Power4.easeInOut, clearProps: 'all'})
-					.to($homePlanet, 1, {y: '+=400'})
+					.to($homePlanet, 1, {y: '+=' + planetDistanceTravel})
 					
 
 					.to($bottomNav, 0.5, {autoAlpha: 1, ease:Power4.easeInOut})
@@ -150,7 +178,7 @@ jQuery(document).ready(function($)
 				tlDown
 				.set($body, {className: '+=is-animating'})
 
-				.to(sectionFrom, 0.5, {x: '-=100%', ease:Power4.easeInOut, clearProps: 'all'}, '0')
+				.to(sectionFrom, 0.5, {x: '-=' + slideXDistanceTravel + '%', ease:Power4.easeInOut, clearProps: 'all'}, '0')
 				.to($allGlow, 0.25, {autoAlpha: 0, ease:Power4.easeInOut}, '0')
 				.to($thisGlow, 0.25, {autoAlpha: 1, ease:Power4.easeInOut})
 				.to(sectionTo, 0.5, {x: '0%', ease:Power4.easeInOut}, '0')
@@ -176,7 +204,7 @@ jQuery(document).ready(function($)
 					.to(sectionTo, 0, {autoAlpha: 0, x: '0%', ease:Power4.easeInOut})
 					.to($bottomNav, 1, {autoAlpha: 0, ease:Power4.easeInOut})
 
-					.to($homePlanet, 1, {y: '-=400'})
+					.to($homePlanet, 1, {y: '-=' + planetDistanceTravel})
 
 					.to(sectionTo, 1, {autoAlpha: 1, ease:Power4.easeInOut})
 
@@ -188,12 +216,12 @@ jQuery(document).ready(function($)
 				//SLIDE LEFT
 				tlUp
 				.set($body, {className: '+=is-animating'})
-				.set(sectionTo, {x: '-100%'})
+				.set(sectionTo, {x: '-' + slideXDistanceTravel + '%'})
 
 				.to(sectionTo, 0.5, {x: '0%', ease:Power4.easeInOut}, '0')
 				.to($allGlow, 0.25, {autoAlpha: 0, ease:Power4.easeInOut}, '0')
 				.to($thisGlow, 0.25, {autoAlpha: 1, ease:Power4.easeInOut})
-				.to(sectionFrom, 0.5, {x: '100%', ease:Power4.easeInOut}, '0')
+				.to(sectionFrom, 0.5, {x: slideXDistanceTravel + '%', ease:Power4.easeInOut}, '0')
 
 
 				.set($body, {className: '-=is-animating'});
