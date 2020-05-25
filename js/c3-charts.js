@@ -29,15 +29,15 @@ function drawChart(dataTarget){
 
 
   var height = 40 * (data['columns'][0].length);
-  console.log(height);
+  // console.log(height);
   var colors = ['e902f6', '#7e0085', '#6a0070', '#3f0042', '#2a002d'];
 
-  console.group('Graphique: ' + element);
-  console.log('Hauteur: ' + height);
-  console.log('Données: ' + data['columns'][1][0]);
-  console.log(data['columns'][0]);
-  console.log(data['columns'][1]);
-  console.groupEnd();
+  // console.group('Graphique: ' + element);
+  // console.log('Hauteur: ' + height);
+  // console.log('Données: ' + data['columns'][1][0]);
+  // console.log(data['columns'][0]);
+  // console.log(data['columns'][1]);
+  // console.groupEnd();
 
   var chart = c3.generate({
     bindto: element,
